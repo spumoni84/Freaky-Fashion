@@ -9,6 +9,7 @@ header {
     align-items: center;
     background-color: #ffffff;
     padding: 20px;
+    
 }
 
 .logo {
@@ -22,12 +23,14 @@ header {
     width: 80%;
     max-width: 300px;
     margin-top: 10px;
+    padding-left: 0px;
 }
 
 .search-bar {
     margin-top: 10px;
     padding: 10px 10px 10px 40px;
     width: 80%;
+    margin-left: 12px;
     max-width: 300px;
     border: 1px solid #ccc;
     border-radius: 16px;
@@ -35,7 +38,7 @@ header {
 
 .fa-magnifying-glass {
     position: absolute;
-    left: 11px;
+    left: 14px;
     top: 30px;
     transform: translateY(-50%);
     color: #ccc; /* Grayed out color */
@@ -47,9 +50,10 @@ header {
 
 .header-icon {
     position: relative;
-    top: -25px;
-    left: 310px;
+    top: -43px;
+    left: 350px;
     margin-right: 10px;
+    font-size: 1.5em;
     cursor: pointer;
     text-decoration: none;
 }
@@ -388,19 +392,27 @@ header {
     display: none;
 }
 
-header {
-    position: absolute;
-    top: 0;
-    left: 0;
+/* styles.css */
+#admin-header {
     z-index: 10;
-    padding: 10px;
-    color: #ffffff;
-    background-color: #000000;
+    position: fixed;
+    top: 0;
     width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 30px 10px;
+    text-align: left;
+}
+
+#admin-header h1 {
+    z-index: 10;
+    margin: 0;
+    font-size: 24px;
 }
 
 .sidebar {
     position: fixed;
+    z-index: 9;
     top: 0;
     left: 0;
     width: 150px;
@@ -594,7 +606,7 @@ input[type="submit"]:hover {
     .search-bar {
         position: relative;
         top: -6.5em;
-        left: 16.5em;
+        left: 17.3em;
         margin-top: -0;
         margin-left: 20px;
         width: 250px;
@@ -609,9 +621,10 @@ input[type="submit"]:hover {
 
     .header-icons {
         position:absolute;
+        font-size: 0.8em;
         z-index: 10;
-        top: 118px;
-        right: 320px;
+        top: 130px;
+        right: 340px;
         display: flex;
         align-items: center;
         margin-left: auto;
