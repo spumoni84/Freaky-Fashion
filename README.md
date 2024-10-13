@@ -1,2 +1,4 @@
 # Freaky-Fashion
 Complete Freaky Fashion webpages 
+
+The Freaky Fashion project is a well-structured web application designed to manage and showcase a collection of fashion products. It provides a user-friendly interface for administrators to add new products with detailed information, including images, descriptions, SKUs, prices, publishing dates, and categories. The project also includes features for validating input data, such as ensuring the correct SKU format and restricting image uploads to specific file types. Additionally, the project offers an interactive product list where users can view available products and mark them as favorites using a heart icon. Overall, Freaky Fashion combines essential e-commerce functionalities with a clean and intuitive design, making it a robust solution for managing fashion products.
