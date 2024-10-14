@@ -4,7 +4,7 @@ body {
 }/* Remove this closing brace */
 
 header {
-    display: flex-row;
+    display: block;
     justify-content: center;
     align-items: center;
     background-color: #ffffff;
@@ -64,7 +64,7 @@ header {
     margin: 10px;
     display: flex;
     flex-direction: column;
-    align-items: left;
+    align-items: flex-start;
     margin-bottom: 0;
 }
 
@@ -90,7 +90,6 @@ header {
 
 .product {
     display: inline-block;
-    width: calc(25-40px);
     margin: 20px;
     padding: 20px;
     border-radius: 10px;
@@ -419,7 +418,7 @@ header {
 
 /* Optional: Change the link color if you want */
 .product-link-unique:hover {
-    color: #0a8df8;
+    color: #000000;
     text-decoration: none; /* Optional: Add underline on hover */
 }
 
@@ -578,10 +577,9 @@ header {
     }
 
     .product-unique {
-        width: auto;
         display: flex;
         flex-direction: row;
-        align-items: center;
+        align-items: flex-start;
 
     }
 
@@ -593,24 +591,34 @@ header {
     }
 
     .product-unique img {
-        max-width: 350px !important; /* Ensure  max-width applied */
+        max-width: 60% !important; /* Ensure  max-width applied */
         margin-right: 20px;
     }
 
-    .product-unique .product-info {
-        display: flex;
-        flex-direction: column;
+    .product-info {
+        max-width: 60%;
+        position: relative;
+        left: 320px;
+        bottom: 350px;
     }
 
     .add-to-cart-btn {
         width: 200px; /* Adjusted width */
+        white-space: nowrap; /* Prevent text wrapping */
+        text-overflow: ellipsis; /* Add ellipsis for overflow */
+        position: relative;
+        top: 300px;
+        left: -100px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+
     }
 
     .heart-overlay-unique {
         position: absolute;
         z-index: 10;
-        bottom: 20px;
-        left: 290px;
+        bottom: 260px;
+        left: 230px;
         border-radius: 50%;
         padding: 5px;
         display: flex;
@@ -629,6 +637,7 @@ header {
    /* Default styles for the similar products */
    .similar-products {
     display:block;
+    margin-top: 60px; /* Add spacing above the section */
     padding: 20px; /* Add spacing around the section */
 }
 
@@ -801,11 +810,18 @@ header {
         max-width: 350px; /* Limit description width to 33% of the total document width */
     }
 
+    .product-info {
+        max-width: 60%;
+        position: relative;
+        left: 460px;
+        bottom: 500px;
+    }
+
     .heart-overlay-unique {
         position: absolute;
         z-index: 10;
-        bottom: 20px;
-        left: 310px;
+        bottom: 60px;
+        left: 370px;
         border-radius: 50%;
         padding: 5px;
         display: flex;
