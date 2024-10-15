@@ -564,7 +564,7 @@ header {
     .new-overlay {
         position: absolute;
         z-index: 10;
-        top: 1070px;
+        top: 1130px;
         left: 70px;
     }
 
@@ -791,7 +791,7 @@ header {
     .new-overlay {
         position: absolute;
         z-index: 10;
-        top: 1060px;
+        top: 1120px;
         left: 70px;
     }
 
